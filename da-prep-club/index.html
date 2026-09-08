@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DA Scholarship Prep Club</title>
+<meta name="description" content="Scholarship resources, guides, and deadline reminders for the DA Scholarship Prep Club.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">DA Prep Club <span>SCHOLARSHIP</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="deadlines.html">Deadlines</a></li>
+      <li><a href="index.html#signup">Get reminders</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="hero-eyebrow">DA SCHOLARSHIP PREP CLUB</div>
+      <h1>Everything the group chat knows, in one place.</h1>
+      <p class="lede">Scholarship databases, essay help, FAFSA walkthroughs, and every deadline that matters — organized the way we already talk about it, minus the endless scrolling.</p>
+      <div class="hero-actions">
+        <a href="resources.html" class="btn btn-primary">Browse resources</a>
+        <a href="#signup" class="btn btn-outline">Get deadline reminders</a>
+      </div>
+    </div>
+    <div>
+      <div class="board">
+        <div class="board-head">
+          <span>NEXT UP</span>
+          <span>DEPARTURES</span>
+        </div>
+        <div data-board data-limit="4"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">HOW THIS SITE IS ORGANIZED</div>
+      <h2>Same categories as the chat, easier to search</h2>
+      <p>If it's been shared in the group chat, it lives on this site under the same topic — scholarship listings, essay help, FAFSA, recommendation letters, interview prep, and more.</p>
+    </div>
+    <div class="two-col">
+      <div>
+        <h3 style="font-family:var(--headline); font-size:1.3rem; margin:0 0 10px;">Resource library</h3>
+        <p style="color:var(--slate); line-height:1.6; margin:0 0 16px;">Every link, doc, and template that's ever been dropped in the chat, sorted into categories you can actually find things in.</p>
+        <a href="resources.html" class="btn btn-dark">Open the library</a>
+      </div>
+      <div>
+        <h3 style="font-family:var(--headline); font-size:1.3rem; margin:0 0 10px;">Blog</h3>
+        <p style="color:var(--slate); line-height:1.6; margin:0 0 16px;">Longer write-ups on the stuff that comes up every year — writing essays, requesting letters, prepping for interviews.</p>
+        <a href="blog.html" class="btn btn-dark">Read the blog</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section alt" id="signup">
+  <div class="wrap">
+    <div class="newsletter">
+      <div>
+        <h3>Never miss a deadline</h3>
+        <p>One email when a new scholarship or resource gets added, plus a reminder a week out and a day out from any deadline you're tracking. No spam, unsubscribe anytime.</p>
+      </div>
+      <div>
+        <form id="signup-form">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="First and last name">
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interest" value="Scholarship listings"> Scholarship listings</label>
+            <label><input type="checkbox" name="interest" value="Essay help"> Essay help</label>
+            <label><input type="checkbox" name="interest" value="FAFSA & financial aid"> FAFSA & aid</label>
+            <label><input type="checkbox" name="interest" value="Interview prep"> Interview prep</label>
+          </div>
+          <label style="display:flex; align-items:center; gap:8px; font-size:0.9rem; margin-bottom:16px;">
+            <input type="checkbox" name="reminders" checked style="width:auto;"> Send me deadline reminders
+          </label>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Sign me up</button>
+          <div class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>DA Scholarship Prep Club — built by members, for members.</div>
+    <div class="small-print">Questions or updates for this site? Drop them in the group chat.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
